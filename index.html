@@ -1,404 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Home</title>
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <canvas id="canvas"> </canvas>
-        <canvas id="canvas2" class="can"> </canvas>
-        <div class="all">
-            <header>
-                <div class="menu">
-                    <div class="logo"><h2>PORTFOLIO</h2></div>
-                    <nav>
-                        <ul>
-                            <li><a class="active" href="index.html">HOME</a></li>
-                            <li><a href="about.html">SKILLS</a></li>
-                            <li><a href="services.html">SERVICES</a></li>
-                            <li><a href="projects.html">PROJECTS</a></li>
-                            <li><a id="ct" href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                    <div class="bars">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </header>
-            <main>
-                <div id="index" class="hero main-hero">
-                    <div id="one" class="left" data-aos="fade-right">
-                        <article>
-                            <h1><span>J</span>alal <span>M</span>adhaji</h1>
-                            <h3><span>Web Developer</span><span>Mobile Apps Developer</span><span>UI/UX Designer</span></h3>
-                        </article>
-                        <a id="cntct" href="">Contact</a>
-                        <a href="my resume.pdf">Download cv</a>
-                    </div>
-                    <div id="second" class="left" data-aos="fade-right">
-                        <article>
-                            <h2>Education</h2>
-                            <ul>
-                                <li>Frontend Diploma - Recoded 2020.</li>
-                                <li>Web Development Diploma - GTI 2018.</li>
-                                <li>Bs. Public Relations - Sana`a University 2011.</li>
-                            </ul>
-                        </article>
-                    </div>
-                    <div id="third" class="left" data-aos="fade-right">
-                        <article>
-                            <h2>Skills</h2>
-                            <ul>
-                                <li>Full-stack Web Development.</li>
-                                <li>Mobile Apps Development.</li>
-                                <li>Blockchain Development.</li>
-                            </ul>
-                        </article>
-                    </div>
-                    <div id="fourth" class="left" data-aos="fade-right">
-                        <article>
-                            <h2>Hobbies</h2>
-                            <ul>
-                                <li>I love coding.</li>
-                                <li>I love football.</li>
-                                <li>I love swimming.</li>
-                            </ul>
-                        </article>
-                    </div>
-                    <div id="fifth" class="left" data-aos="fade-right">
-                        <article>
-                            <h2>Languages</h2>
-                            <ul>
-                                <li>Arabic</li>
-                                <li>English</li>
-                            </ul>
-                        </article>
-                    </div>
-                    <div class="right" data-aos="fade-left">
-                        <div class="up">
-                            <span><strong id="currentIndex">01</strong>/05</span>
-                            <span>< <strong id="currentIndex-s">1</strong> /></span>
-                        </div>
-                        <div class="progress">
-                            <span></span>
-                        </div>
-                        <a href="#" id="view-profile">View Profile</a>
-                    </div>
-                    <div class="dots">
-                        <div class="dot active" data-power="20" data-value="one"></div>
-                        <div class="dot" data-power="40" data-value="second"></div>
-                        <div class="dot" data-power="60" data-value="third"></div>
-                        <div class="dot" data-power="80" data-value="fourth"></div>
-                        <div class="dot" data-power="100" data-value="fifth"></div>
-                    </div>
-                </div>
-                <div id="profile" class="hero profile-hero">
-                    <div class="profile-grid">
-                        <!-- <a id="go-back" href="#">Go Back</a> -->
-                        <div>
-                            <article>
-                                <h1><span>J</span>alal <span>M</span>adhaji</h1>
-                                <p>I would Love to build your app</p>
-                            </article>
-                            <a href="#">Contact</a>
-                        </div>
-                        <article>
-                            <h2>Education</h2>
-                            <ul>
-                                <li>Frontend Diploma - Recoded 2020.</li>
-                                <li>Web Development Diploma - GTI 2018.</li>
-                                <li>Bs. Public Relations - Sana`a University 2011.</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h2>Skills</h1>
-                            <ul>
-                                <li>Full-stack Web Development.</li>
-                                <li>Mobile Apps Development.</li>
-                                <li>Blockchain Development.</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h2>Hobbies</h2>
-                            <ul>
-                                <li>I love coding.</li>
-                                <li>I love football.</li>
-                                <li>I love swimming.</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h2>Languages</h2>
-                            <ul>
-                                <li>Arabic</li>
-                                <li>English</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-                <div id="about" class="hero about-hero">
-                    <div class="left" data-aos="fade-right">
-                        <article>
-                            <h1>My Skills</h1>
-                            <p>
-                                Everyday I keep fighting to gain more knowledge & this what I have already accomplished
-                            </p>
-                        </article>
-                        <!-- <a href="#">Contact</a> -->
-                    </div>
-                    <div
-                        class="lang-bars"
-                        data-aos="flip-up"
-                        data-aos-duration="1500"
-                    >
-                        <div class="lang">
-                            <div class="top">
-                                <h5>HTML</h5>
-                                <span>95%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="95"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>CSS & SASS</h5>
-                                <span>90%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="90"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>JS & JQUERY</h5>
-                                <span>75%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="75"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>REACT.JS</h5>
-                                <span>70%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="70"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>PHP</h5>
-                                <span>75%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="75"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>MYSQL</h5>
-                                <span>70%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="70"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>ASP.NET (WEB PAGES,MVC,API)</h5>
-                                <span>70%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="70"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>SQL SERVER</h5>
-                                <span>70%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="70"></span>
-                            </div>
-                        </div>
-                        <div class="lang">
-                            <div class="top">
-                                <h5>FLUTTER</h5>
-                                <span>75%</span>
-                            </div>
-                            <div class="bar">
-                                <span data-value="75"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="right" data-aos="fade-left">
-                        <div class="up">
-                            <span><strong>01</strong>/06</span>
-                            <span>< <strong>1</strong> ></span>
-                        </div>
-                        <div class="progress"></div>
-                        <a href="#">View Profile</a>
-                    </div> -->
-                    <!-- <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div> -->
-                </div>
-                <!-- end about -->
-                <!-- services start -->
-                <div id="services" class="hero services-hero" data-aos="fade-up">
-                    <article>
-                        <h1>My Services</h1>
-                        <p>
-                            These are the services I can help you with.
-                        </p>
-                    </article>
-                    <div class="services">
-                        <div class="card">
-                            <img src="./images/ux.png" alt="" />
-                            <h3>Web Development</h3>
-                            <p>
-                                Building a full web applications from design into dealing with databases and web APIs.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <img src="./images/ux-design.png" alt="" />
-                            <h3>UI/UX Design</h3>
-                            <p>
-                                Providing the best user interface designing with the high standards of user experience
-                            </p>
-                        </div>
-                        <div class="card">
-                            <img src="./images/phone.png" alt="" />
-                            <h3>Mobile Apps Development</h3>
-                            <p>
-                                Building a native apps & guarantee both the beautiful design and the best performance
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end services -->
-                <!-- start projects -->
-                <div id="projects" class="hero projects-hero" data-aos="flip-right">
-                    <div class="projects">
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/cheetah snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>Cheetah</h3></div>
-                            <a href="https://jalalmadhaji.github.io/cheetah-project/" target="_blank">visit now</a>
-
-                        </div>
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/creative org snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>Creative Org.</h3></div>
-                            <a href="http://dev.creativetd-ye.org/" target="_blank">visit now</a>
-                        </div>
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/onePage portofolio snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>One Page Portfolio</h3></div>
-                            <a href="https://jalalmadhaji.github.io/one-page-portfolio" target="_blank">visit now</a>
-                        </div>
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/recoded template snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>Re:Coded Template</h3></div>
-                            <a href="https://jalalmadhaji.github.io/sat-assignment-css/home.html" target="_blank">visit now</a>
-                        </div>
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/One Page template snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>One Page Template</h3></div>
-                            <a href="https://jalalmadhaji.github.io/october-twelve-assignment/home.html" target="_blank">visit now</a>
-                        </div>
-                        <div
-                            class="card"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000"
-                        >
-                            <div class="img"><img src="./images/web template snapshot.jpg" alt=""></div>
-                            <div class="layout"><h3>Awesome Template</h3></div>
-                            <a href="https://jalalmadhaji.github.io/oct-14-assignment/" target="_blank">visit now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end projects -->
-                <!-- start contact -->
-                <div id="contact"
-                    class="hero contact-hero"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                >
-                    <article>
-                        <h1>Contact Me</h1>
-                        <p>
-                            Let me hear your thoughts, I am  sure I can make them a reality.
-                        </p>
-                    </article>
-                    <form autocomplete="off">
-                        <div class="input-grid">
-                            <input type="text" id="name" placeholder="Name" />
-                            <input type="text" id="email" placeholder="Email" />
-                        </div>
-                        <input type="text" id="title" placeholder="Title" />
-                        <textarea
-                            id="message"
-                            placeholder="Message Here"
-                        ></textarea>
-                        <button>Send</button>
-                    </form>
-                </div>
-                <!-- end contact -->
-            </main>
-            <footer>
-                <div class="social">
-                    <div class="header">
-                        <h6>SOCIAL</h6>
-                        <li><a href="https://www.linkedin.com/in/jalalmadhaji/" target="_blank">Linkedin</a></li>
-                        <li><a href="https://github.com/JalalMadhaji" target="_blank">Github</a></li>
-                        <li><a href="mailto:jalal.almadhaji90@gmail.com?Subject=Hello%20Jalal">Email me</a></li>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="./js/jquery-3.3.1.min.js"></script>
-        <script src="./js/load.js"></script>
-        <script src="js/particles.js"></script>
-        <script src="./js/main.js"></script>
-    </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mahmood Sufyan — Senior Oracle APEX and PL/SQL Developer. Oracle Database, ORDS REST APIs, SaaS, and financial systems.">
+<title>Mahmood Sufyan | Oracle APEX and PL/SQL Developer</title>
+<style>
+:root{color-scheme:light;--ink:#182b3a;--muted:#526572;--line:#d9e1e6;--accent:#175e75}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}
+body{margin:0;background:#f7f9fa;color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #175e75;outline-offset:5px}
+.skip{position:absolute;top:-100px;left:1rem;background:white;padding:.5rem}.skip:focus{top:1rem}
+.wrap{max-width:1040px;margin:auto;padding:0 32px}
+header{border-bottom:1px solid var(--line);background:white}nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0}
+.brand{font-weight:700;color:var(--ink);text-decoration:none}nav ul{list-style:none;display:flex;gap:22px;padding:0;margin:0}
+nav a{font-size:.9rem}.hero{padding:76px 0 54px}.eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-size:clamp(2.6rem,6vw,4rem);line-height:1.12;letter-spacing:-.04em;margin:14px 0}
+.role{font-size:clamp(1.15rem,3vw,1.55rem);margin:0 0 20px}
+.intro{max-width:750px;color:var(--muted);font-size:1.1rem}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:25px}
+.button{border:1px solid var(--accent);padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600}
+.primary{background:var(--accent);color:white}
+section{padding:34px 0;border-top:1px solid var(--line)}h2{font-size:1.5rem;line-height:1.3;margin:0 0 20px}
+h3{font-size:1.08rem;line-height:1.45;margin:0 0 10px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:white;border:1px solid var(--line);border-radius:10px;padding:25px}.card p{color:var(--muted);margin:0 0 16px}
+.tag{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.note,.meta{color:var(--muted);font-size:.9rem}ul{padding-left:22px}li{margin-bottom:5px}
+.contact{display:flex;flex-wrap:wrap;gap:12px 28px}footer{padding:26px 0 38px;color:var(--muted);font-size:.85rem}
+@media(max-width:640px){.wrap{padding:0 22px}nav{align-items:flex-start;flex-direction:column;gap:10px}nav ul{flex-wrap:wrap;gap:10px 20px}.hero{padding:48px 0 36px}.grid{grid-template-columns:1fr}.card{padding:22px}body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Main navigation">
+<a class="brand" href="#main">Mahmood Sufyan</a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+<main id="main" class="wrap">
+<div class="hero">
+<span class="eyebrow">Oracle development · SaaS · Financial systems</span>
+<h1>Mahmood Sufyan</h1>
+<p class="role">Senior Oracle APEX &amp; PL/SQL Developer</p>
+<p class="intro">I build database-driven business applications, REST APIs, and reporting solutions. My experience spans recruitment SaaS, microfinance, accounting, and payment systems.</p>
+<p class="meta">Sanaa, Yemen · 8+ years of software development experience</p>
+<div class="actions"><a class="button primary" href="mailto:mahmood.sufyan.dev@gmail.com">Get in touch</a><a class="button" href="#projects">Explore selected work</a></div>
+</div>
+<section id="about"><h2>About my work</h2>
+<p>My core technologies are Oracle APEX, PL/SQL, Oracle Database, and Oracle REST Data Services (ORDS). I work on business logic, database performance, reporting, integrations, application security, and production support.</p>
+<p>My enterprise experience includes Golden Cloud, a bilingual, multi-tenant recruitment platform with HR, accounting, and subscription management, alongside financial systems for loan processing, general ledger, and transfers.</p>
+<p class="meta">BSc in Computer Science, Taiz University (Distinction). Arabic: native. English: intermediate, with technical reading and writing skills.</p>
+</section>
+<section id="skills"><h2>Technical focus</h2><div class="grid">
+<div class="card"><h3>Oracle and databases</h3><p>Oracle APEX, Oracle Database, SQL, PL/SQL packages, procedures, functions, triggers, and query tuning.</p><h3>APIs and security</h3><p>ORDS, REST APIs, JSON, webhooks, OAuth 2.0, JWT, and role-based access control.</p></div>
+<div class="card"><h3>Reporting and web</h3><p>JasperReports, APEX Office Print (AOP), HTML, CSS, and JavaScript.</p><h3>Delivery and support</h3><p>Git, Apache Tomcat, Nginx, troubleshooting, application maintenance, and production support.</p></div>
+</div></section>
+<section id="projects"><h2>Selected work</h2>
+<p class="note">The Python/FastAPI projects below are public portfolio demos. Their case studies describe related Oracle APEX, PL/SQL, and ORDS work. The demos are separate implementations, not the original enterprise applications.</p>
+<div class="grid">
+<article class="card"><span class="tag">Python / FastAPI demo</span><h3>Loan and amortization engine</h3><p>Repayment calculations, credit approval workflows, and financial reporting.</p><a href="https://github.com/mahmoodsufyan/loan-management-system">View repository</a> · <a href="https://github.com/mahmoodsufyan/loan-management-system/blob/main/docs/CASE_STUDY.md">Oracle case study</a></article>
+<article class="card"><span class="tag">Python / FastAPI demo</span><h3>Financial ledger API</h3><p>Double-entry accounting, voucher workflows, a chart of accounts, and trial balance reporting.</p><a href="https://github.com/mahmoodsufyan/financial-ledger-api">View repository</a> · <a href="https://github.com/mahmoodsufyan/financial-ledger-api/blob/main/docs/CASE_STUDY.md">Oracle case study</a></article>
+<article class="card"><span class="tag">Oracle APEX example</span><h3>Interactive Grid column visibility</h3><p>A practical SQL and JavaScript example for showing and hiding columns in an Oracle APEX Interactive Grid.</p><a href="https://github.com/mahmoodsufyan/apex_IG_hide_columns">View example</a></article>
+<article class="card"><span class="tag">Enterprise experience</span><h3>Golden Cloud recruitment SaaS</h3><p>Contributed to recruitment, service transfer, worker rental, HR, accounting, and subscription workflows in a bilingual, multi-tenant platform.</p><a href="https://www.linkedin.com/in/mahmood-sufyan">View professional background</a></article>
+</div></section>
+<section id="contact"><h2>Contact</h2><p>For opportunities in Oracle APEX, PL/SQL, backend development, and enterprise applications:</p>
+<div class="contact"><a href="mailto:mahmood.sufyan.dev@gmail.com">mahmood.sufyan.dev@gmail.com</a><a href="https://www.linkedin.com/in/mahmood-sufyan">LinkedIn</a><a href="https://github.com/mahmoodsufyan">GitHub</a></div>
+</section>
+</main>
+<footer class="wrap">Mahmood Sufyan · Oracle APEX &amp; PL/SQL Developer</footer>
+</body>
 </html>
